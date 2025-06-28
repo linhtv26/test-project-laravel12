@@ -29,6 +29,12 @@ return [
     */
 
     'connections' => [
+        'redis' => [
+            'driver' => 'redis',
+            'connection' => 'default',
+            'queue' => null,
+            'retry_after' => 90,
+        ],
 
         'reverb' => [
             'driver' => 'reverb',
